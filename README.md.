@@ -1,0 +1,23 @@
+# 📘 StudyNotes
+
+Sistema de anotações desenvolvido com ASP.NET Core MVC.
+
+## 🚀 Funcionalidades
+- Criar notas
+- Editar notas
+- Excluir notas
+- Buscar notas
+
+## 🛠️ Tecnologias
+- C#
+- ASP.NET Core
+- Entity Framework Core
+- SQL Server
+
+## 📸 Preview
+![Tela de Nova Anotação](https://raw.githubusercontent.com/thiagosoncarmo/studynotes/master/studynotes/Views/Notes/README) 
+
+## 💻 Como rodar o projeto
+1. Clone o repositório.
+2. Execute `Update-Database` no Console do Gerenciador de Pacotes.
+3. Rode o projeto pelo Visual Studio.
