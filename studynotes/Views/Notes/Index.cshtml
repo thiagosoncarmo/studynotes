@@ -1,0 +1,51 @@
+﻿@model IEnumerable<StudyNotes.Models.Note>
+
+<h1 class="mb-4">📘 Minhas Anotações</h1>
+
+<a class="btn btn-primary mb-4" href="/Notes/Create">
+    + Nova Anotação
+</a>
+
+<div class="row">
+    @foreach (var note in Model)
+    {
+        <div class="col-md-4">
+            <div class="card shadow mb-4 border-0">
+
+                <div class="card-body">
+
+                    <h5 class="card-title fw-bold">
+                        @note.Titulo
+                    </h5>
+
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        @note.Categoria
+                    </h6>
+
+                    <p class="card-text">
+                        @note.Conteudo
+                    </p>
+
+                    <hr />
+
+                    <div class="d-flex justify-content-between">
+
+                        <a class="btn btn-warning btn-sm"
+                               href="/Notes/Edit/@note.Id">
+                            ✏️ Editar
+                        </a>
+
+                        <a class="btn btn-danger btn-sm"
+                               href="/Notes/Delete/@note.Id"
+                               onclick="return confirm('Tem certeza que deseja excluir esta anotação?');">
+                            🗑️ Excluir
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    }
+</div>
